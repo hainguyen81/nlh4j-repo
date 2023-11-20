@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!-- Parent -->
+	<parent>
+		<groupId>org.nlh4j</groupId>
+		<artifactId>hrm-entities</artifactId>
+		<version>${revision}</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
+	
+	<!-- Present package -->
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>hrm-db-repository</artifactId>
+	<packaging>jar</packaging>
+	<name>Human Resources Management - Web Entity Repositories Module</name>
+	<description>Human Resources Management - Web Entity Repositories Module</description>
+	
+	<!-- Properties -->
+	<properties>
+		<!-- Progurad configuration -->
+		<proguard.skip>true</proguard.skip>
+
+		<!-- JAR Signer -->
+		<jarsigner.skip>true</jarsigner.skip>
+	</properties>
+
+	<!-- Dependencies -->
+	<dependencies>
+		<!-- NLH4J -->
+		<dependency>
+			<groupId>${nlh4j.groupId}</groupId>
+			<artifactId>nlh4j-utilities</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${nlh4j.groupId}</groupId>
+			<artifactId>nlh4j-core</artifactId>
+      	</dependency>
+	</dependencies>
+</project>

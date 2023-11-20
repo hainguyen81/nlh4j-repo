@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<!-- Parent -->
+	<parent>
+		<groupId>org.nlh4j</groupId>
+		<artifactId>hrm</artifactId>
+		<version>1.0</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
+	
+	<!-- Present package -->
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>hrm-entities</artifactId>
+	<version>${revision}</version>
+	<packaging>pom</packaging>
+	<name>Human Resources Management - Web Entities Module</name>
+	<description>Human Resources Management - Web Entities Module</description>
+
+	<!-- Modules -->
+	<modules>
+		<module>modules/hrm-db-repository</module>
+		<module>modules/hrm-db-master</module>
+		<module>modules/hrm-db-hr</module>
+		<module>modules/hrm-db-program</module>
+		<module>modules/hrm-db-inventory</module>
+		<module>modules/hrm-db-qoutation</module>
+	</modules>
+</project>

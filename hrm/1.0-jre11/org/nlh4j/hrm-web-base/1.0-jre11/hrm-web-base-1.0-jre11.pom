@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!-- Parent -->
+	<parent>
+		<groupId>org.nlh4j</groupId>
+		<artifactId>hrm-web</artifactId>
+		<version>${revision}</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
+	
+	<!-- Present package -->
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>hrm-web-base</artifactId>
+	<packaging>jar</packaging>
+	<name>Human Resources Management - Web Base Module</name>
+	<description>Human Resources Management - Web Base Module</description>
+
+	<!-- Dependencies -->
+	<dependencies>
+		<!-- NLH4J -->
+		<dependency>
+			<groupId>${nlh4j.groupId}</groupId>
+			<artifactId>nlh4j-utilities</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${nlh4j.groupId}</groupId>
+			<artifactId>nlh4j-core</artifactId>
+      	</dependency>
+      	<dependency>
+			<groupId>${nlh4j.groupId}</groupId>
+			<artifactId>nlh4j-entities</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${nlh4j.groupId}</groupId>
+			<artifactId>nlh4j-domain</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${nlh4j.groupId}</groupId>
+			<artifactId>nlh4j-lang</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${nlh4j.groupId}</groupId>
+			<artifactId>nlh4j-web-config</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${nlh4j.groupId}</groupId>
+			<artifactId>nlh4j-web-core</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${nlh4j.groupId}</groupId>
+			<artifactId>nlh4j-web-base</artifactId>
+      	</dependency>
+
+		<!-- HRM -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-db-master</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-db-hr</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-db-program</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-db-qoutation</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-db-inventory</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-domain-master</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-domain-hr</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-domain-program</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-domain-qoutation</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-domain-inventory</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-web-client</artifactId>
+      	</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>hrm-web-template</artifactId>
+      	</dependency>
+
+		<!-- Servlet -->
+		<dependency>
+			<groupId>${servlet-api.groupId}</groupId>
+			<artifactId>${servlet-api.artifactId}</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>
