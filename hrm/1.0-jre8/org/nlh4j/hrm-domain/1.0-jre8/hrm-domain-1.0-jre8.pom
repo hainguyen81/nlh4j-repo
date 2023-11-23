@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<!-- Parent -->
+	<parent>
+		<groupId>org.nlh4j</groupId>
+		<artifactId>hrm</artifactId>
+		<version>1.0</version>
+		<relativePath>../../pom.xml</relativePath>
+	</parent>
+	
+	<!-- Present package -->
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>hrm-domain</artifactId>
+	<version>${revision}</version>
+	<packaging>pom</packaging>
+	<name>Human Resources Management - Web Database Domain Module</name>
+	<description>Human Resources Management - Web Database Domain Module</description>
+	
+	<dependencies>
+		<!-- Spring Dependencies -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+		</dependency>
+
+		<!-- Spring MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+	</dependencies>
+
+	<!-- Modules -->
+	<modules>
+		<module>modules/hrm-domain-master</module>
+		<module>modules/hrm-domain-hr</module>
+		<module>modules/hrm-domain-program</module>
+		<module>modules/hrm-domain-inventory</module>
+		<module>modules/hrm-domain-qoutation</module>
+	</modules>
+</project>
