@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!-- Parent -->
+	<parent>
+		<groupId>org.nlh4j</groupId>
+		<artifactId>nlh4j</artifactId>
+		<version>1.0</version>
+		<relativePath>${root.basedir}/pom.xml</relativePath>
+	</parent>
+
+	<!-- Present package -->
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>nlh4j-web-template</artifactId>
+	<packaging>jar</packaging>
+	<name>nlh4j-web-template</name>
+	<version>${revision}</version>
+	<description>Base Web JSP Template for Java Web/Mobile</description>
+
+	<!-- Properties -->
+	<properties>
+		<!-- Progurad configuration -->
+		<proguard.skip>true</proguard.skip>
+	</properties>
+
+	<!-- Dependencies -->
+	<dependencies>
+		<!-- NLH4J -->
+      	<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>nlh4j-utilities</artifactId>
+			<version>${project.version}</version>
+      	</dependency>
+      	<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>nlh4j-core</artifactId>
+			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>${project.parent.groupId}</groupId>
+					<artifactId>nlh4j-utilities</artifactId>
+				</exclusion>
+			</exclusions>
+      	</dependency>
+      	<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>nlh4j-web-config</artifactId>
+			<version>${project.version}</version>
+      	</dependency>
+
+		<!-- Servlet -->
+		<dependency>
+			<groupId>${servlet-api.groupId}</groupId>
+			<artifactId>${servlet-api.artifactId}</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>${jstl.groupId}</groupId>
+			<artifactId>${jstl.artifactId}</artifactId>
+		</dependency>
+
+		<!-- Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Seasar DOMA -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.seasar.doma</groupId>
+			<artifactId>doma</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
