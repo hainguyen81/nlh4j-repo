@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!-- Parent -->
+	<parent>
+		<groupId>org.nlh4j</groupId>
+		<artifactId>nlh4j</artifactId>
+		<version>1.0</version>
+		<relativePath>${root.basedir}/pom.xml</relativePath>
+	</parent>
+
+	<!-- Present package -->
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>nlh4j-thumbnailer</artifactId>
+	<packaging>jar</packaging>
+	<name>nlh4j-thumbnailer</name>
+	<version>${revision}</version>
+	<description>Thumbnail Generator Package for Java Web/Mobile</description>
+
+	<!-- Dependencies -->
+	<dependencies>
+		<!-- NLH4J -->
+      	<dependency>
+			<groupId>${project.parent.groupId}</groupId>
+			<artifactId>nlh4j-utilities</artifactId>
+			<version>${project.version}</version>
+      	</dependency>
+		
+		<!-- Commons -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-collections4</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-validator</groupId>
+			<artifactId>commons-validator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+		</dependency>
+		
+		<!-- Spring Dependencies -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+
+		<!-- Apache POI -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+		</dependency>
+
+		<!-- Thumbnail Libraries -->
+		<dependency>
+			<groupId>com.artofsolving</groupId>
+			<artifactId>jodconverter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.artofsolving</groupId>
+			<artifactId>jodconverter-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.semweb4j</groupId>
+			<artifactId>rdf2go.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>fontbox</artifactId>
+		</dependency>
+		<!-- TODO Aperture Repo has been down.
+			So need another third party libraries for generating office file(s) thumbnail -->
+		<!-- <dependency>
+			<groupId>org.semanticdesktop.aperture</groupId>
+			<artifactId>aperture-core</artifactId>
+		</dependency> -->
+
+		<!-- Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Others -->
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
